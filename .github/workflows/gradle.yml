@@ -35,6 +35,6 @@ jobs:
         host: ${{ secrets.AWS_IP }}
         user: root
         pass: ${{ secrets.AWS_PASSWORD }}
-        scp: build/libs/github-actions-java-test-0.0.1-SNAPSHOT.jar => /home/webapp/github-actions-java-test-0.0.1-SNAPSHOT.jar
+        scp: build/libs/github-actions-java-test-0.0.1-SNAPSHOT.jar => /home/webapp/
         last_ssh: |
           bash /home/webapp/restart.sh
