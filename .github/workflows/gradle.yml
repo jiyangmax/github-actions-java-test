@@ -45,7 +45,7 @@ jobs:
         context: ./
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/github-actions-java-test:$(date +%s)
+        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/github-actions-java-test:latest
     - name: scp-deployer
       uses: cross-the-world/ssh-scp-ssh-pipelines@v1.1.4
       with:
